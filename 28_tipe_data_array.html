@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- array adalah tipe data yang berisi kumpulan data
+        array di js memiliki sifat dinamis, artinya bisa bertambah dengan sendirinya saat kita masukkann
+        data ke dalam array -->
+        <script>
+            // membuat array
+            let arrayKosong = [];
+            let arrayNama = ["Aulia", "Putri", "Rachmadani"]
+        </script>
+        <!-- cara kerja array 
+            - array akan disimpan dalam posisi berurutan, dimana urutan pertama di mulai dari nomor 0
+            - setiap kita menambah data ke array, otomatis data akan disimpan di urutan terakhir
+            - urutan di array kita sebut dengan index
+        -->
+        <script>
+            const names = [];
+            names.push("Aulia");
+            names.push("Putri", "Rachmadani");
+
+            console.table(names);
+        </script>
+        <!-- operasi di array
+            1. array.push(value) -> menambah data ke array
+            2. array.length -> untuk mendapatkan panjang array
+            3. array[index] -> mendapat data di posisi index
+            4. array[index] = value -> mengubah data di posisi index\
+            5. delete.array[index] = menghapus data di posisi index, namun index tidak bergeser
+        -->
+        <script>
+            const name = [];
+            name.push("Aulia");
+            name.push("Putr", "Rachmadani");
+
+            console.table(name)
+
+            name[0] = "Cantik";
+            console.table(name);
+            console.info(name.length);
+
+        </script>
+        <!-- di dalam array tidak ada batasnya harus data apa
+            jadi kita bisa memasukkan data apapun ke dalam array
+            bahkan kita bisa memasukkan array kedalam array -->
+</body>
+</html>

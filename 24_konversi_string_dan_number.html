@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- saat membuat aplikasi input dari pengguna selalu dalam bentuk string
+    sedangkan kitA ingin mengelola datanya dalam bentuk number
+    maka sangat disarankan untuk melakukan konversi tipe data  
+    caranya:
+    1. parseInt(string) -> mengkonversi dari string ke number(bil bul)
+    2. parseFloat(string) -> mengkonversi dari string ke number (bilangan pecahan)
+    3. Number(string) -> Mengkonversi dari string ke number (bilangan bulat atau pecahan)
+    4. number.toString() -> Mengkonversi dari number ke string
+    -->
+
+    <script>
+        // contoh masalah yang akan terjadi jika tidak dikonversi
+        const value1 = "1";
+        const value2 = 1;
+        // const sum = value1+vallue2;
+        // document.writeln(`<p>${sum}</p>`); //eror value is not defined
+
+        //konversi string ke number
+        document.writeln(`<p>${parseInt("1.1")}`); //1
+        document.writeln(`<p>${parseFloat("1.1")}`); //1.1
+        document.writeln(`<p>${Number("1.1")}`); //1.1
+
+    </script>
+</body>
+</html>

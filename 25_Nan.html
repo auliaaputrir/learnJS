@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- jika ternyata string yang akan di konversi bukan data yang valid, maka hasil dari konversi tersebut adalah NaN
+    (Not a Number)
+    NaN adalah number spesial yang menyebutkan bahwa ini bukanlah number
+    jika NaN dioperasikan dengan data number lainnya, maka hasilnya akanmenjadi NaN lagi
+    -->
+    <script>
+        document.writeln(`<p>${parseInt("Salah")}`); //NaN
+        document.writeln(`<p>${parseInt("1.1text")}`); //1.1
+        
+        // Number tidak mentolerir kesalahan pada data
+        document.writeln(`<p>${Number("1.1ups")}`); //NaN
+    </script>
+</body>
+</html>
