@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ternaru operator adalah operator sederhana dari if statement
+        ternary operator terdiri dari kondisi yang di evaluasi, jika menghasilkan true maka nilai pertama diambil
+        jika false maka nilai kedua diambil
+    -->
+    <script>
+        // kode tanpa ternary operator
+        const nilai = 75;
+        let ucapan;
+
+        if (nilai >= 75){
+            ucapan = "Selamat anda lulus";
+        }
+        else{
+            ucapan = "Silakan coba lagi"
+        }
+
+        // pake ternary operator
+        const nilai2 = 60;
+        const ucapan2 = nilai2 >= 75 ? "Selamat anda lulus" : "Silakan coba lagi";
+
+        document.writeln(`<p>${ucapan}</p>`)
+        document.writeln(`<p>${ucapan2}</p>`)
+    </script>
+</body>
+</html>

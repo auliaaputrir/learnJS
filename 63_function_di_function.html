@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tidak ada batasan dimana kita bisa membuat function
+    termasuk didalam function itu sendiri
+    fitur ini namanya inner function
+    inner function hanya bisa diakses di tempat kita mambuatnya, tidak dapat diakses dr luar -->
+    <script>
+        function outter(){
+            function inner(){
+                console.info('Inner');
+            }
+
+            inner();
+            inner()
+        }
+        outter()
+        // inner() //error cannot access
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Rest parameter adalah fitur dimana kita bisa mengirim data ssebanyak banyaknya 
+        pada satu parameter, dan secara otomatis akan di konversi menjadi array
+        untuk membuat rest parameter ada ketentuannya
+        rest parameter hanya boleh ada satu di function tidak boleh ada lebih dari satu
+        Rest parameter hanya boleh berada di posisi paling akhir 
+        tidak boleh didepan atau di tengah kecuali memang ada 1 parameter
+        di bahasa pemrogaman lain disebut variabel argument -->
+        <script>
+            function sum(name, ...data){
+                let total = 0;
+                for (const item of data){
+                    total += item;
+                }
+                console.info(`Total ${name} is ${total}`);
+            }
+
+            sum('Orange', 2,3,5,8,7,8)
+        // spread syntax
+        // kadang kita terlanjur memiliki data berupa array
+        // tapi untungnya kita juga bisa mengirim array ke rest parameter
+        // fitur ini namanya spread syntax
+        sum('Orange', ...[2,3,5,8,7,8])
+        </script>
+</body>
+</html>

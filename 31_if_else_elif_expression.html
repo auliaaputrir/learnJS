@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dalam java script, if adalah salah satu kunci yang digunakan untuk percabangan
+        Percabanganartinya kita bisa mengeksekusi kode program tertentu ketika suatu kondisi terpenuhi
+     -->
+     <script>
+        const examValue = 90;
+
+        if(examValue > 80)
+        {
+            document.writeln("<p>Good Job</p>");
+        }
+     </script>
+
+     <!-- else expression
+        Block if akan di eksekusi ketika kondisi bernilai true
+        Kadang kita ingi melakukan program tertentu jika kondisi if bernilai false\
+        hal ini bisa digunakan menggunakan else expression
+     -->
+     <script>
+        const examValue2 = 70;
+
+        if(examValue2 > 80)
+        {
+            document.writeln("<p>Good Job</p>");
+        }
+        else{
+            document.writeln("<p>Try Again</p>");
+        }
+     </script>
+     <!-- Kadang dalam if dibutuhkan beberapa kondisi. maka bisa menggunakan else if -->
+     <script>
+        const examValue3 = 70;
+
+        if(examValue3 > 80)
+        {
+            document.writeln("<p>Good Job</p>");
+        }
+        else if(examValue3 > 60){
+            document.writeln("<p>Not Bad</p>")
+        }
+        else{
+            document.writeln("<p> Try Again </p>")
+        }
+     </script>
+</body>
+</html>

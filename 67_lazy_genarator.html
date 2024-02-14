@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Generator itu sifatnya lazy
+        Jadi artinya jika kita belum ambil data dari generator maka yield selanjutnya tidak akan dieksekusi -->
+        <script>
+            function* buatGanjil(value){
+                for(let i = 1; i <= value; i++){
+                    if(i%2===1){
+                        console.info(`Perulangan ke ${i}`);
+                        yield i;
+                    }
+                }
+            }
+            const angkaGanjil = buatGanjil(100);
+            console.info(angkaGanjil.next().value);
+            console.info(angkaGanjil.next().value);
+            console.info(angkaGanjil.next().value);
+        </script>
+    </body>
+</html>

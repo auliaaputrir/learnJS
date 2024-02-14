@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- secara default function tidak menghasilkan value apapun
+        agar bisa menghasilkansesuatu, kita gunakan kata 'return' 
+        function hanya bisa mengembalikan satu data, jika ingin lebih dari satu data bisa gunakan array-->
+        <script>
+            function sayHello(firstName, lastName)
+            {
+                const say = `Hello ${firstName} ${lastName}`;
+                return say;
+            }
+
+            const result = sayHello('Aulia', 'Putri')
+            document.writeln(`<p>${result}</p>`)
+
+            // contoh function return value lebih dari satu
+            function getFinalScore(value)
+            {
+                if (value > 90)
+                {
+                    return 'A';
+                }
+                else if(value > 80)
+                {
+                    return 'B';
+                }
+                else if(value > 70)
+                {
+                    return 'C';
+                }
+                else if(value > 60){
+                    return 'D';
+                }
+                else{
+                    return 'E';
+                }
+            }
+
+            // menghentikan eksekusi dengan return
+            // saat kita menggunakan kata kunci return, maka kode setelah return tidak akan di eksekusi
+            // kita bisa menggunakan return untuk menghentikan sebyah function
+            function isContains(array, searchValue){
+                for (const element of array)
+                {
+                    if (element === searchValue)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            console.info(isContains([1, 2, ,3 ,4, 5, 6, 7, 8, 9, 10], 5))
+        </script>
+    </body>
+</html>

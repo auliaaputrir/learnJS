@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        optional chaining operator (?) merupakan operator yang digunakan untuk mengamankan ketika kita ingin mengakses
+        properti sebuah objek dari data nullish
+
+        jika mengakses properti dari sebuah objek dari data nullish maka akan terjadi error
+     -->
+     <script>
+        let person ={};
+
+        // alert(person.address.country); //eror karena tidak ada datanya
+
+        let say;
+        if(person.adress !== undefined && person.adress != null){
+            say = person.adress.country;
+        }
+        alert(say)
+
+        // pake chaining operator
+        let person2 = {};
+        alert(person?.address?.country);
+     </script>
+</body>
+</html>

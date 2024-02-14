@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tipe data objek adaloah tipe data yang mirip dengan tipe data array
+    yang membedakan adalah index pada tipe data objek bisa menggunakan string
+    index di objek biasanya disebut atribut atau properties
+    -->
+    <script>
+        // membuat objek kosong
+        const orang = {};
+        // menambah atau mengubah
+        orang["nama"] = "Aulia";
+        orang["alamat"] = "Baki";
+        orang["umur"]=25;
+
+        console.table(orang);
+        delete orang["umur"];
+        console.table(orang);
+    </script>
+    <script>
+        // membuat objek dengan properties
+        const orang2 = {
+            nama : "Aulia",
+            alamat : "Baki",
+            umur : 25
+        };
+        console.table(orang2)
+    </script>
+    <script>
+        // mengakses properti objek
+        console.info(`Nama : ${orang2.nama}`);
+        console.info(`Alamat : ${orang2.alamat}`);
+        console.info(`Umur : ${orang2.umur}`);
+        </script>
+</body>
+</html>

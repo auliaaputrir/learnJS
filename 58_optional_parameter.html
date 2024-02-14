@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- secara default parameter di function itu optional,
+    artinya kita tidak wajib mengisi valuenya ketika memanggil function
+    jika tidak ada valuenya yang kita kirim ke parameter ketika memanggil function,
+    secara otomatis parameter tersebut bernilai undefined-->
+    <script>
+        function sayHello(firstName, middleName, lastName)
+        {
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+        }
+
+        sayHello('Aulia');
+
+        // kita juga bisa memberikan parameter secara default
+        function register(name, gender='UKNOWN')
+        {
+            console.log(name);
+            console.log(gender);
+        }
+
+        register("Aulia", 'Female');
+        register('Hadsa');
+        register('Dedek', undefined)
+    </script>
+</body>
+</html>

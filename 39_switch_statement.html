@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        switch statement adalah percabangan yang sama dengan if, namun lebih sederhana cara pembuatannya
+        kondisi switch statement hanya untuk perbandinga ==
+     -->
+     <script>
+        let nilai = "A";
+        switch(nilai){
+            case "A" :
+                document.writeln("<p>Wow anda lulus dengan bailk</p>");
+                break;
+            case "B" :
+            case "C" :
+                document.writeln("<p> Anda Lulus </p>");
+            case "D" :
+            document.writeln("<p> Anda tidak Lulus </p>");
+            default:
+                document.writeln("<p>Mungkin anda salah jurusan")
+        }
+     </script>
+</body>
+</html>

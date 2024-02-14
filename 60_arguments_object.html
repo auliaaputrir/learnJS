@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- sebelum ada fitur rest parameter, di java script ada fitur yang bernama
+        arguments objects. ini adalah fitur dimana kita bisa mengambil semua parameter
+        dalam bentuk array dengan menggunakan objects bernama arguments
+        arguments secara otomatis bisa digunakan di function
+        namun perlu diingat bahwa untuk java script saat ini lebih baik
+        disarankan menggunakan rest parameter dibanding arguments object -->
+    <script>
+        function oldSum(){
+            let total = 0;
+            for(const item of arguments)
+            {
+                total += item;
+            }
+            console.info(`Total is ${total}`);
+        }
+        oldSum(1, 2, 3, 4, 5, 6, 7);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- funtion tidak hanya bisa digunakan sebagai kode program yang di eksekusi
+        tapi bisa juga sebagai value. artinya function bisa disimpan di variabel,
+        bisa juga dikirim melalui parameter ke function lainnya -->
+
+        <script>
+            function sayHello(name){
+                document.writeln(`Hello ${name}`);
+            }
+            sayHello("Eko");
+            let say = sayHello;
+            say('Budi');
+
+            let say2 = sayHello;
+            function giveName(callback){
+                callback('Eko');
+            }
+
+            giveName(sayHello);
+            giveName(say);
+        </script>
+</body>
+</html>

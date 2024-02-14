@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- function generator adalah function yang digunakan untuk membuat data generator
+        generator adalah data yang bisa di iterasi seperti array
+        untuk membuat function generator kita perlu menggunakan tanda * (bintang) setelah kata function
+        dan untuk mengembalikan data di tiap iterasi, kita bisa gunakan kata kunci yield diikuti datanya
+    -->
+
+    <script>
+        function* createNnames(){
+            yield 'Aulia';
+            yield 'Putri';
+            yield 'Rachmadani';
+        }
+
+        const names = createNnames();
+        for (const name of names){
+            console.log(name)
+        }
+
+        // lebih kompleks
+        function* buatGanjil(value){
+            for(let i = 1; i<= value; i++){
+                if(i % 2 === 1){
+                    yield i;
+                }
+            }
+        }
+
+        const angkaGanjil = buatGanjil(100);
+        for (const angka of angkaGanjil)
+        {
+            console.info(angka);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in operator adalah operator yang bisa dilakukan untuk mengecek apakah sebuah properti 
+    ada didalam objek atau tidak
+    jika properti tersebut ada di objek maka hasilnya true
+    jika tidak maka hasilnya false
+    selain objek juga bisa digunakan untuk mengecek index di array
+    -->
+ <script>
+    const person = {
+        firstName : "Aulia",
+        lastName : "Rachmadani"
+    }
+    const result = "firstName" in person // true
+    document.writeln(`<p>${result}</p>`)
+ </script>
+ <!-- in operator hanya digunakan untuk mengecek sebuah properti ada atau tidak
+    jadi meskipun datanya null atau undefined hasilnya tetap true -->
+</body>
+</html>

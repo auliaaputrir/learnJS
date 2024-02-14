@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- arrow function adalah alternatif pembuatan function yang lebih sederhana
+        dari function biasanya
+        Namun terdapat limitasi dan juga tidak bisa digunakan di semua situasi
+        Dinamakan arrow function karena menggunakan tanda => 
+        Kekurangannya:
+        - tidak memliki fitur argumentt object
+        = tidak bisa menggunakan function generator
+        - tidak bisa mengakses this
+        - tidak bisa mengakse super (oop)    
+    -->
+    <script>
+        const sayHello = (name) => {
+            const say = `Hello ${name}`;
+            console.info(say);
+        }
+
+        sayHello("Aulia");
+
+        // jika isinya sederhana kita bisa buat tanpa block
+        const sayHi = name => console.info(`Hello ${name}`);
+
+        sayHello('Aulia Cantik');
+
+        // arrow value juga bisa ada return valuenya
+        // pake block/tanpa block
+        const sum = (first, second) => first + second;
+        console.info(sum(10, 10));
+        
+        // Jika parameter di arrow funtion hanya satu kita tidak bisa menggunakan kurung pada parameter
+        const Hello = name => console.info(`Hello ${name}`);
+        Hello('Aulia');
+
+    </script>
+</body>
+</html>

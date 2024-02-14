@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Logika AND (&&) dan OR (||) bisa digunakan untuk tipe data non boolean -->
+    <script>
+        // operator or
+        // operator or membaca dari kiri kekanan
+        // operator ini akan mengambil nilai pertama yang truthy
+        // jika tidak ada satupun yang bernilai truthy, maka nilai terakhir yang akan diambil
+        console.info("hello" || ''); //hello
+        console.info("" || []); //[]
+        console.info("0" || "NOL"); //0
+        console.info(0 || "NOL") //NOL
+        console.info(null || "NULL") //NULL
+        console.info(undefined || "UNDEFINED") //UNDEFINED
+
+        // OPERATOR AND
+        // operator logika AND (&&) membaca dari kiri kekanan
+        // operator ini mengambil nilai pertama yang falsy
+        // jika tidak ada 1 nilai pun yang falsy maka nilai terakhir yang akan diambil
+        console.info("hello" && ''); //''
+        console.info("" && []); //''
+        console.info("0" && "NOL"); //nol
+        console.info(0 && "NOL") //0
+        console.info(null && "NULL") //null
+        console.info(undefined && "UNDEFINED") //undefined
+    </script>
+</body>
+</html>
