@@ -38,6 +38,15 @@
         const Hello = name => console.info(`Hello ${name}`);
         Hello('Aulia');
 
+
+        // arrow function sebagai parameter
+        // karena arrow function sebagai anonymous function
+        // jadi kita bisa menggunakan arrow function sebagai parameter di function lain
+        function giveName(callback){
+            callback('Eko');
+        }
+
+        giveName((name) => consoloe.info(`Hello ${name}`));
     </script>
 </body>
 </html>

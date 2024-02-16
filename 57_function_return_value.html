@@ -50,12 +50,13 @@
                 {
                     if (element === searchValue)
                     {
-                        return true;
+                        console.info(element);
+                        return array[element-1]
                     }
                 }
                 return false;
             }
-            console.info(isContains([1, 2, ,3 ,4, 5, 6, 7, 8, 9, 10], 5))
+            console.info(isContains([1, 2, ,3 ,4, 5, 6, 7, 8, 9, 10], 4))
         </script>
     </body>
 </html>
